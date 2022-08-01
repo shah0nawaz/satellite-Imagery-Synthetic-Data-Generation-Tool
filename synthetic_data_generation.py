@@ -5,7 +5,7 @@ import numpy as np
 from past_model import PatchAir
 # Useful Constants and Variables
 cropping_list = []
-DATASET_DIR = './satellite_full/' # Folder 1
+DATASET_DIR = './Input/' # Folder 1
 # DATASET_DIR = './SIDS_India_New_2nd_Half/' # Folder 2
 
 IMG_EXTENSION = '.jpg'
