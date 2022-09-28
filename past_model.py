@@ -9,12 +9,13 @@ import time
 
 class PatchAir():
 
-    def __init__(self, model_path, save_data_path):
+    def __init__(self, model_path, save_data_path, save_results):
         #self.input_img = input_img
         self.refPtx = []
         self.refPty = []
         self.model_name = model_path
-        self.data_folder = save_data_path + '*'
+        self.data_folder = save_results + '*'
+        self.save_results = save_results
 
     def click_and_crop(self, event, x, y, flags, param):
         # grab references to the global variables
@@ -87,10 +88,10 @@ class PatchAir():
             #background.show('image')
             time.sleep(2)
 
-            background.save('./results' + '/' + name)
+            background.save(self.save_results + name)
             image_re = cv2.imread(file)
             cv2.imshow('image',image_re)
-            cv2.waitKey(500)
+            cv2.waitKey(1000)
             self.refPty = []
             self.refPtx = []
 
