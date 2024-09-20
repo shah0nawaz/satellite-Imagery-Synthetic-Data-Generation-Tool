@@ -1,3 +1,3 @@
-# satellite-Imagery-Synthetic-Data-Generation-Tool
+# Satellite Imagery Synthetic Data Generation Tool
 
 ![my gif](/procedure.gif)
